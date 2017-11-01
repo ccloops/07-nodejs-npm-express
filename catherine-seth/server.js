@@ -30,6 +30,9 @@ app.post('/articles', bodyParser, (request, response) => {
 // DONE: Write a new route, using an arrow function, that will handle a request and send the new.html file back to the user
 app.get('/new', (req, res) => res.sendFile('/new.html', {root: './public'}));
 
+app.get('/*', (request, response) => response.send('<h1>404 Not Found</h1>'));
+
+
 app.listen(PORT, () => {
   // DONE: Refactor this to arrow function, log to the console a message that lets you know which port your server has started on
   console.log(`Server Started on PORT: ${PORT}`);

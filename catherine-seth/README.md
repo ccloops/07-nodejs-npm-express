@@ -1,10 +1,12 @@
-Mobile First - Code 301, Day 4
+07-nodejs-npm-express - Code 301, Day 8
 
-Author: Nick Gibson and Catherine Looper
+Author: Seth Donohue and Catherine Looper
 
-Version: 1.6.0
+Version: 1.8.0
 
 Overview
+
+This app is hosted on a local server.
 
 Using AJAX, we now retrieve our data from a remote source, rather than loading it in through a JS script. Further, in order to make the page load faster, we store this data after the initial retrieval into localStorage, thus avoiding additional server queries.
 
@@ -35,11 +37,11 @@ We approached this design with a mobile first mindset. Then we used media querie
 Change Log
 ====
 
-10-27-17 9:00AM - We started working on the lab and created our directory structure with Catherine as driver and Jeff K as navigator. We then completed the TODOs on index.html and article.js.
+11/1/17 9:00AM Started lab with Catherine as driver and Seth as navigator. Completed file tree set up and first 5 TODOS. Initialized npm and build out of server.
 
-10-27-17 9:30AM - We then switched to Jeff K as driver and Catherine as navigator and completed the TODOs on articleView.js and all COMMENTS. We also filled out the README.
+11/1/17 9:40AM Switched to Seth as driver and Catherine as navigator. Completed remaining TODOs and all COMMENTs.
 
-10-31-17: 10:40AM - The page now utilizes AJAX to retrieve and populate the blog content on initial visit, rather than loading from a local JS script. On returning visits, content is populated using localStorage. We began with Catherine driving while Nick navigated, and shifted off around 10AM to Nick driving while Catherine navigated.
+11/1/17 10:40AM Switched to Catherine as driver and Seth as navigator and completed README.
 
 Credits and Collaborations
 ====
@@ -49,3 +51,4 @@ normalize.css - https://necolas.github.io/normalize.css/
 icomoon - https://icomoon.io/
 jQuery - https://jquery.com/
 Handlebars.js - http://handlebarsjs.com/
+node.js - https://nodejs.org/en/
