@@ -74,7 +74,7 @@ articleView.setTeasers = () => {
 };
 
 // COMMENT: When/where is this function invoked? What event ultimately triggers its execution? Explain the sequence of code execution when this function is invoked.
-// PUT YOUR RESPONSE HERE
+// It's invoked in the new.html, it is triggered on end of page load. Shows the html elements with a class of tab-content, hides id's of export-field, turns on a listener for id of 'article-json' when it is on focus and sleects it through a callbakc function. Then it turns on listeners for id of 'new-form' that creates a new article on any change, finally it turns on a listener for submitting the article on form submit.
 articleView.initNewArticlePage = () => {
   $('.tab-content').show();
   $('#export-field').hide();
@@ -87,7 +87,7 @@ articleView.initNewArticlePage = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// Called when initNewArticlePage is called, and triggered when anything in  #new-form is changed.
 articleView.create = () => {
   let article;
   $('#articles').empty();
@@ -112,7 +112,7 @@ articleView.create = () => {
 };
 
 // COMMENT: When is this function called? What event ultimately triggers its execution?
-// PUT YOUR RESPONSE HERE
+// Called when initNewArticlePage is called and triggered when #new-form is submitted.
 articleView.submit = event => {
   event.preventDefault();
   let article = new Article({
@@ -125,7 +125,7 @@ articleView.submit = event => {
   });
 
   // COMMENT: Where is this function defined? When is this function called? What event ultimately triggers its execution?
-  // PUT YOUR RESPONSE HERE
+  // It is defined in article.js as a method attached to prototype property of the Article constructor ( attached to any new instantiated article). It is called when submit is called and triggered when a new record is inserted.
   article.insertRecord();
 }
 
